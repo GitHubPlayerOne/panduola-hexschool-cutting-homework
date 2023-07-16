@@ -87,6 +87,10 @@ a {
   display: flex;
   align-items: center;
   gap: 4px;
+  cursor: pointer;
+}
+.name button:hover {
+  background: #c3c3c3;
 }
 
 .bg-intro {
@@ -146,6 +150,10 @@ a {
 }
 .contact .images img {
   width: 162px;
+  transition: all 1s;
+}
+.contact .images img:hover {
+  transform: scale(1.1);
 }
 
 .projects .h2 {
@@ -165,6 +173,12 @@ a {
 .project .box {
   flex-direction: column;
   gap: 28px;
+}
+.project img {
+  transition: all 1s;
+}
+.project img:hover {
+  transform: scale(1.1);
 }
 
 .footer {

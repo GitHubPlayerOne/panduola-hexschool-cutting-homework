@@ -74,6 +74,10 @@ a{
         display: flex;
         align-items: center;
         gap: 4px;
+        cursor: pointer;
+        &:hover{
+            background: #c3c3c3;
+        }
     }
 }
 .bg-intro{
@@ -127,6 +131,10 @@ a{
         gap: 20px;
         img{
             width: 162px;
+            transition: all 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -147,6 +155,12 @@ a{
     .box{
         flex-direction: column;
         gap: 28px;
+    }
+    img{
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 .footer{
