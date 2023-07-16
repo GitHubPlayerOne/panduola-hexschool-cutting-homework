@@ -1,0 +1,174 @@
+@import './reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+body {
+  font-family: "Bruno Ace SC", cursive;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 36px;
+}
+
+.mb-2 {
+  margin-bottom: 32px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.py-1 {
+  padding: 160px 0;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.nav ul {
+  display: flex;
+  gap: 61px;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.nav ul li {
+  max-width: 306px;
+}
+.nav a {
+  color: #D1D1D1;
+}
+
+.name {
+  padding: 72px 0;
+  display: flex;
+  align-items: center;
+}
+.name h2 {
+  color: #fff;
+}
+.name h1 {
+  color: #00FFA3;
+  text-align: right;
+}
+.name button {
+  float: right;
+  padding: 12px 24px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bg-intro {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+}
+
+.introduction {
+  display: flex;
+  color: #fff;
+  gap: 24px;
+}
+.introduction .images {
+  display: flex;
+  gap: 24px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 134px;
+}
+.about ol {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 40px 24px;
+}
+.about ol li {
+  padding: 16px;
+  width: 306px;
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.about ol .h4 {
+  margin-bottom: 4px;
+}
+
+.bg-contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  gap: 113px;
+  justify-content: space-between;
+}
+.contact section {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.contact .images {
+  display: flex;
+  gap: 20px;
+}
+.contact .images img {
+  width: 162px;
+}
+
+.projects .h2 {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.project {
+  display: flex;
+  gap: 24px;
+}
+.project div {
+  display: flex;
+  gap: 24px;
+}
+.project .box {
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
