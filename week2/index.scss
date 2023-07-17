@@ -156,6 +156,21 @@ a{
         flex-direction: column;
         gap: 28px;
     }
+    .content{
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        button{
+            background-color: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+    }
     img{
         transition: all 1s;
     }
