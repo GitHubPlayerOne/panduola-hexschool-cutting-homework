@@ -1,13 +1,210 @@
+@import "./reset";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
-.font-en{
-    font-family: 'Roboto', sans-serif;
+$red: #AA0601;
+$white: #fff;
+$black: #000;
+$gray: #FBF2F2;
+$font: #212529;
+
+$vm_base: 1920;
+$font_base: 16;
+
+@function vw($px) {
+    @return ($px / $vm_base) * 100vw;
 }
-.font-cn{
+@function rem($px) {
+    @return ($px / $font_base) * 1rem;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    color: $font;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.text-red{
-    color: #AA0601;
+.container{
+    max-width: calc(1320px/1920px)*100vw;
+    padding: 0 12px;
+    margin: 0 auto;
 }
-.text-tiny{
-    color: #FBF2F2;
+.bg-red{
+    background-color: $red;
+}
+.nav{
+    width: calc(1320px/1920px)*100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    margin-bottom: 96px;
+    flex-wrap: wrap;
+    a{
+        color: $white;
+    }
+    img{
+        width: 80px;
+        object-fit: contain;
+    }
+}
+.main{
+    margin-bottom: 80px;
+}
+.menu{
+   display: flex;
+   gap: 64px;
+}
+.mb-1{
+    margin-bottom: 32px;
+}
+.title{
+    font-size: rem(48);
+    font-weight: 600;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
+.second-title{
+    font-size: rem(24);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.question{
+    font-size: rem(20);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.footer{
+    padding: 60px 0 32px;
+    border-bottom: 1px solid $white;
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: $white;
+        vertical-align: middle;
+    }
+    ul{
+        display: flex;
+        gap: vw(48);
+        margin-bottom: 36px;
+    }
+}
+.icons{
+    display: flex;
+    gap: 32px;
+}
+.connect{
+    font-size: calc(36/1920)*100vw;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    p{
+        color: $white;
+    }
+    ul{
+        display: flex;
+        gap: 48px;
+    }
+    a{
+        color: $white
+    }
+}
+.material-symbols-outlined{
+    color: $white;
+    font-size: 36px;
+    padding: 6px;
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: calc(720/768)*100vw;
+    }
+    .nav{
+        width: calc(720/768)*100vw;
+        margin-bottom: 80px;
+    }
+    .icons{
+        gap: 16px;
+        img{
+            width: 40px;
+        }
+    }
+    .other{
+        padding: 32px 0 40px;
+    }
+    .connect{
+        font-size: calc(36/768)*100vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        max-width: 100vw;
+    }
+    .nav{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+        img{
+            padding: 12px 15px;
+        }
+    }
+    .menu{
+        gap: 0px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        li{
+            border: 1px solid $white;
+        }
+        a{
+            display: block;
+            padding: 12px 0;
+            text-align: center;
+        }
+    }
+    .title{
+        font-size: rem(24);
+    }
+    .mb-1{
+        margin-bottom: 24px;
+    }
+    .main{
+        margin-bottom: 64px;
+    }
+    .footer{
+        padding: 24px 0;
+        ul{
+            display: none;
+        }
+    }
+    .icons{
+        gap: 8px;
+        img{
+            width: 24px;
+        }
+    }
+    .connect{
+        font-size: 16px;
+        gap: 8px;
+    }
+    .other{
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px 0;
+        ul{
+            flex-direction: column;
+            gap: 8px; 
+        }
+    }
+    .material-symbols-outlined{
+        font-size: 20px;
+        padding: 3px;
+    }
 }
