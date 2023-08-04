@@ -1,0 +1,17 @@
+.logoImg{
+    width: 80px;
+  }
+  .nav-menu{
+    @include mobile{
+      li{
+        width: 50%;
+        border: 1px solid #fff;
+      }
+      a{
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+      }
+    }
+  }

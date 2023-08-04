@@ -1,0 +1,58 @@
+.main{
+    padding: 96px 12px 80px;
+    @include pad{
+        padding: 80px 36px;
+    }
+    @include mobile{
+        padding: 40px 12px 64px;
+    }
+}
+.title{
+    border-left: 8px solid $primary;
+    padding-left: 1rem;
+    margin-bottom: 32px;
+    @include mobile{
+        margin-bottom: 24px;
+    }
+}
+.select{
+    margin-bottom: 40px;
+    @include mobile{
+        margin-bottom: 24px;
+    }
+}
+.form-select{
+    width: 304px;
+    color: #495057;
+    border: 1px solid #CED4DA;
+    --bs-form-select-bg-img: null;
+    padding: 6px 12px;
+}
+.select-config{
+    right: 12px;
+    top: 50%;
+    pointer-events: none;
+}
+
+.card{
+    color: #212529;
+    img{
+        @include pad{
+        width: 50%;
+       } 
+       @include mobile{
+        width: 100%;
+       }
+    }
+}
+.card-body{
+    border: 1px solid #00000020;
+}
+.card-title{
+    border-bottom: 1px solid #00000020;
+}
+.card-text{
+    a{
+        color: #000;
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
+@mixin pad{
+    @media(max-width:991px){
+      @content;
+    }
+  }
+  @mixin mobile{
+    @media(max-width:767px){
+      @content;
+    }
+  }
+@import './custom.scss'; // BS 樣式導入
+
+// global
+a{
+    text-decoration: none
+}
+ol, ul{
+    list-style: none;
+}
+
+// 其他客製樣式
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
