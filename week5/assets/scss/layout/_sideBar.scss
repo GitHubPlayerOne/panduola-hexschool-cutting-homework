@@ -1,0 +1,26 @@
+.sideBar{
+  width: 296px;
+  min-height: 100vh;
+  background-color: $gray-100;
+}
+.menu{
+  li{
+    cursor: pointer;
+    padding: 0 32px;
+    &:hover{
+      border-left: 4px solid $green-300;
+      color: $green-300;
+    }
+  }
+  .active{
+    border-left: 4px solid $success;
+    color: $success;
+  }
+}
+.userImg{
+  width: 40px;
+  height: 40px;
+  img{
+    object-fit: cover;
+  }
+}

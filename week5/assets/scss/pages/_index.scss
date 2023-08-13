@@ -1,0 +1,12 @@
+.table{
+    border-color: $gray-400;
+    th{
+        padding: 0 8px 4px;
+    }
+    thead{
+        border-color: $gray-900;
+    }
+}
+.options:hover{
+    color: $success;
+}
