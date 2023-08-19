@@ -1,0 +1,37 @@
+.material-symbols-outlined.fill {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.logo-img{
+  width: 40px;
+  @include pad{
+    width: 53px;
+  }
+}
+.page-link a:hover{
+  color: #9C9E18;
+}
+
+
+.menu-list {
+  display: none;
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  padding: 16px 12px;
+  background-color: #EBEAE3;
+  border-top: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  li{
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  a:hover {
+    color: #9C9E18;
+  }
+}

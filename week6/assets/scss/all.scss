@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Yeseva+One&display=swap');
+@import './custom.scss'; // BS 樣式導入
+
+// 其他客製樣式
+.btn-primary{
+    &:hover{
+        color: $secondary;
+    }
+}
+img, a{
+  display: block;
+}
+
+@mixin pad{
+    @media(min-width: 992px){
+      @content;
+    }
+  }
+
+.font-serif{
+  font-family: 'Noto Serif TC',serif;
+}
+.font-sans{
+  font-family:'Noto Sans TC',serif;
+}
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/event.scss';

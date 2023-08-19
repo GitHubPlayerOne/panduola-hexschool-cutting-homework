@@ -1,0 +1,229 @@
+
+
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  margin: 0;
+  @include pad{
+    height: 518px;
+    padding-top: 48px;
+  }
+  &-title{
+    font-size: 32px;
+    word-wrap: break-word;
+    @include pad{
+      font-size: 60px;
+      height: 518px;
+    }
+  }
+}
+
+.pages{
+  img{
+    width: 40px;
+    @include pad{
+      width: 80px;
+    }
+  }
+  &-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 ;
+    font-size: 16px;
+    font-weight: bold;
+    height: 100%;
+    border: 2px solid #000;
+    @include pad{
+      font-size: 24px;
+      padding: 36px 0;
+    }
+  }
+}
+
+.recent{
+  margin-bottom: 32px;
+  @include pad{
+    margin-bottom: 60px;;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    section{
+      flex-grow: 1;
+    }
+  }
+  &-link:hover{
+    span{
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+  &-img{
+    height: 210px;
+    object-fit: cover;
+    @include pad{
+      height: 255px;
+    }
+  }
+  &-sell{
+    position: relative;
+    &::before{
+      content: '';
+      width: 29px;
+      height: 29px;
+      background-color: $secondary;
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%;
+      left: -8px;
+      display: none;
+    }
+    &:hover{
+      &::before{
+        display: block;
+      }
+    }
+  }
+}
+
+.online{
+  &-card{
+    margin-bottom: 32px;
+    @include pad{
+      margin-bottom: 60px;;
+    }
+  height: max-content;
+    img{
+      height: 100%;
+      max-height: 158px;
+      object-position: 0 30%;
+          @include pad{
+        max-height: 317px;
+      }
+    }
+  }  
+  &-tag{
+    border: 1px solid #000;
+    border-left: 4px solid #000;
+    padding: 4px 16px;
+    cursor: pointer;
+    @include pad{
+      padding: 4px 24px;
+    }
+    &:hover{
+      background-color: $primary;
+      color: #fff;
+      border-color: $secondary;
+    }
+  }
+  card-text{
+    text-align: justify;
+  }
+}
+
+.imgs-title{
+  letter-spacing: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  p{
+    animation: text_shaking 5s  cubic-bezier(.4,.94,.56,1.59) infinite;
+  }
+}
+.activity{
+  margin: 48px 0;
+  gap: 44px;
+  @include pad{
+    margin: 60px 0;
+    gap: 0px;
+  }
+  &-card{
+    border: 2px solid $primary;
+    position: relative;
+    padding: 16px 16px 32px;
+    @include pad{
+      padding: 16px 16px 48px;;
+    }
+    &2,&4{
+      transform: rotate(2deg);
+    }
+    &3{
+      transform: rotate(-2deg);
+    }
+  }
+  img{
+    height: 267px;
+    object-fit: cover;
+    @include pad{
+      height: 274px;
+    }
+  }
+  &-body{
+    font-size: 18px;
+    margin: 0;
+  }
+  &-tag{
+    position: absolute;
+    background-color: #fff;
+    padding: 8px 16px;
+    top: 0;
+    left: 50%;
+    &1, &3, &4{
+      transform: translate(-50%,-50%) rotate(-4deg);
+    }
+    &2{
+      transform: translate(-50%,-50%) rotate(-3deg);
+    }
+  }
+}
+
+.order{
+  margin: 32px 0 48px;
+  @include pad{
+    margin: 60px 0;
+  }
+  form{
+    border-left: 2px solid $primary;
+
+    @include pad{
+      border-left: 0;
+    }
+  }
+}
+
+.icon-box{
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+.dreem{
+  padding: 48px 0;
+  border-top: 3px solid #000;
+  text-align: center;
+  @include pad{
+    padding: 60px 0;
+  }
+}
+@keyframes text_shaking {
+  0%{
+    transform: translateX(5%);
+    color: #000;
+  }
+  50%{
+    transform: translateX(-5%);
+  }
+  100%{
+    transform: translateX(5%);
+  }
+}

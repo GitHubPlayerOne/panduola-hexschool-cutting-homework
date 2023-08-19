@@ -1,0 +1,6 @@
+.pagination{
+    margin-bottom: 48px;
+    @include pad{
+        margin-bottom: 60px;
+    }
+}
