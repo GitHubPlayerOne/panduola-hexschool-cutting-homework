@@ -1,0 +1,22 @@
+.bg-news-page{
+    @extend .bg-news;
+    padding: 60px 0 80px;
+    @include pad{
+        padding: 160px 0 120px;
+    }
+}
+.news-page-content{
+    .date {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        letter-spacing: 16px;
+        font-weight: 700;
+      }
+      h3{
+        letter-spacing: 20px;
+      }
+      p{
+        margin-bottom: 12px;
+      }
+}

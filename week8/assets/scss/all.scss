@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+
+@import './custom.scss'; // BS 樣式導入
+
+.font-shrikhand{
+    font-family: 'Shrikhand', cursive;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+@mixin pad{
+    @media(min-width: 992px){
+      @content;
+    }
+  }
+// 其他客製樣式
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/news.scss';
